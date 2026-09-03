@@ -19,12 +19,12 @@ def test_navigation():
     link.click()
 
     # Проверяем, что URL изменился
-    assert driver.current_url == f"{base_url}/forms/post"
+    assert driver.current_url.rstrip("/") == f"{base_url.rstrip('/')}/forms/post"
 
     # Возвращаемся назад
     driver.back()
 
     # Проверяем, что вернулись на исходный URL
-    assert driver.current_url == f"{base_url}/"
+    assert driver.current_url.rstrip("/") == base_url.rstrip("/")
 
     driver.quit()
