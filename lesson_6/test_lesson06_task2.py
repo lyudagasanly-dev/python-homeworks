@@ -36,4 +36,5 @@ def test_session_storage_auth():
 
     assert user1_url != user2_url, f"Ошибка: URL совпадает ({user1_url})"
 
+    # Проверяем, что вызов стоит строго здесь, внутри функции:
     driver.quit()
