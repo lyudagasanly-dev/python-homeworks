@@ -8,6 +8,10 @@ class LoginPage:
         self.driver = driver
         self.wait = WebDriverWait(driver, 15)
 
+    def open_page(self):
+        """Открывает главную страницу магазина."""
+        self.driver.get("https://saucedemo.com")
+
     def login(self, username, password):
         """Выполняет авторизацию пользователя."""
         user_field = (By.ID, "user-name")
@@ -32,8 +36,9 @@ class CatalogPage:
         self.driver.find_element(
             By.ID, "add-to-cart-sauce-labs-bolt-t-shirt"
         ).click()
-        self.driver.find_element
-        (By.ID, "add-to-cart-sauce-labs-onesie").click()
+        self.driver.find_element(
+            By.ID, "add-to-cart-sauce-labs-onesie"
+        ).click()
 
     def go_to_cart(self):
         """Переходит в корзину."""

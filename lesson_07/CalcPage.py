@@ -12,7 +12,7 @@ class CalcPage:
     def open_page(self):
         """Открывает точную страницу калькулятора."""
         url = (
-           "https://bonigarcia.dev/selenium-webdriver-java"
+           "https://bonigarcia.dev/selenium-webdriver-java/"
            "slow-calculator.html"
         )
         self.driver.get(url)

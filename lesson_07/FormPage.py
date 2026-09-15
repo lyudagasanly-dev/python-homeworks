@@ -11,7 +11,7 @@ class FormPage:
     def open_page(self):
         """Открывает страницу тренажера с формой."""
         url = (
-            "https://bonigarcia.dev/selenium-webdriver-java"
+            "https://bonigarcia.dev/selenium-webdriver-java/"
             "data-types.html"
         )
         self.driver.get(url)

@@ -11,6 +11,7 @@ def test_shop_checkout():
 
     # 2. Авторизуемся через LoginPage
     login_page = LoginPage(driver)
+    login_page.open_page()
     login_page.login("standard_user", "secret_sauce")
 
     # 3. Добавляем товары и переходим в корзину через CatalogPage
